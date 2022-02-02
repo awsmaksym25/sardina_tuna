@@ -8,8 +8,9 @@ class Test implements Serializable {
     Test(steps) {this.steps = steps}
 
     def helloWorld(){
-
-        steps.echo "HelLoWorLd@!####"
+        step {
+            steps.echo "HelLoWorLd@!####"
+        }
     }
 
 }
