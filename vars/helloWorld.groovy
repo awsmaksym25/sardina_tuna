@@ -8,9 +8,7 @@ def call(body) {
         stages {
             stage('HelloWorld') {
                 steps {
-                    script{
-                        echo 'Hello World'
-                    }
+                    echo 'Hello World'
                 }
             }
         }
