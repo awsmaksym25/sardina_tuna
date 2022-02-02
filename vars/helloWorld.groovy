@@ -7,7 +7,6 @@ def call(body) {
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = pipelineParams
     body()
-    def test = Test(this)
 
     def jenkins_agent = pipelineParams.jenkins_agent ?: "all"
   
