@@ -12,13 +12,12 @@ def call(body) {
   
     
     pipeline {
-        // agent {
-        //     label "${jenkins_agent}"
-        // }
-        stages {
-            stage('HelloWorld') {
-                steps {
-                    echo 'Hello World'
+        node {
+            stages {
+                stage('HelloWorld') {
+                    steps {
+                        echo 'Hello World'
+                    }
                 }
             }
         }
