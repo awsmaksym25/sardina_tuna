@@ -30,6 +30,7 @@ def call(body) {
                    test.helloWorld()
                }
             }
+        }
         
         post {
             success {
@@ -39,5 +40,6 @@ def call(body) {
             always {
             }
         }
+
     }
 }
