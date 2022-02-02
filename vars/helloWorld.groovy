@@ -21,7 +21,7 @@ def call(body) {
             stage("Test 1"){               
                steps {
                    cleanWs()
-                   test.helloWorld
+                   test.helloWorld()
                }
             }
         }
