@@ -12,9 +12,9 @@ def call(body) {
   
     
     pipeline {
-        agent {
-            label "${jenkins_agent}"
-        }
+        // agent {
+        //     label "${jenkins_agent}"
+        // }
 
         stages {
             stage("Test 1"){               
