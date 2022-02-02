@@ -4,13 +4,12 @@ def call(body) {
   
     
     pipeline {
-        node {
-            stages {
-                stage('HelloWorld') {
-                    steps {
-                        script{
-                            echo 'Hello World'
-                        }
+        agent any
+        stages {
+            stage('HelloWorld') {
+                steps {
+                    script{
+                        echo 'Hello World'
                     }
                 }
             }
