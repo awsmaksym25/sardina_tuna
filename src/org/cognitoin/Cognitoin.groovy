@@ -1,6 +1,5 @@
 // src\org\cognitoin\Cognitoin.groovy
 package org.cognitoin;
-def steps
 
 class Test implements Serializable {
 
@@ -8,9 +7,7 @@ class Test implements Serializable {
     Test(steps) {this.steps = steps}
 
     def helloWorld(){
-        step {
-            steps.echo "HelLoWorLd@!####"
-        }
+        steps.echo "HelLoWorLd@!####"
     }
 
 }
