@@ -15,13 +15,6 @@ def call(body) {
         agent {
             label "${jenkins_agent}"
         }
-        options {
-            buildDiscarder(logRotator(numToKeepStr: '10'))
-            disableConcurrentBuilds()
-            skipStagesAfterUnstable()
-            ansiColor('xterm')
-            timestamps()
-        }
 
         stages {
             stage("Test 1"){               
@@ -29,15 +22,6 @@ def call(body) {
                    cleanWs()
                    test.helloWorld()
                }
-            }
-        }
-        
-        post {
-            success {
-            }
-            unsuccessful {
-            }
-            always {
             }
         }
 
