@@ -1,6 +1,9 @@
+import org.cognitoin.Cognitoin
+
+
 def call(body) {
     def pipelineParams = [:]
-
+    def run_funv = Cognitoin.Test(this)
   
     
     pipeline {
@@ -8,7 +11,7 @@ def call(body) {
         stages {
             stage('HelloWorld') {
                 steps {
-                    echo 'Hello World'
+                    run_funv.helloWorld
                 }
             }
         }
