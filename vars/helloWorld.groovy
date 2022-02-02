@@ -15,15 +15,12 @@ def call(body) {
         // agent {
         //     label "${jenkins_agent}"
         // }
-
         stages {
-            stage("Test 1"){               
-               steps {
-                   cleanWs()
-                   echo "HelloWorld"
-               }
+            stage('HelloWorld') {
+                steps {
+                    echo 'Hello World'
+                }
             }
         }
-
     }
 }
