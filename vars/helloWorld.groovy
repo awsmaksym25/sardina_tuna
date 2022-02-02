@@ -10,7 +10,7 @@ def call(body) {
         stages {
             stage('HelloWorld') {
                 steps {
-                    run_funv.helloWorld()
+                    run_funv.helloWorld
                 }
             }
         }
